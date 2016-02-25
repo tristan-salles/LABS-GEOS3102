@@ -90,7 +90,7 @@ RUN ldconfig && \
     python setup.py install
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    texlive-base \
+    texlive-full \
     pandoc
 
 RUN git clone https://github.com/jakevdp/JSAnimation.git && \
